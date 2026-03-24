@@ -15,7 +15,10 @@ st.title("📊 Sales Data Analyzer (Upload Your CSV)")
 # -----------------------------
 # 📂 Upload CSV
 # -----------------------------
-uploaded_file = st.file_uploader("Upload your CSV file", type=["csv"])
+uploaded_file = st.file_uploader(
+    "Upload CSV or Excel file",
+    type=["csv", "xlsx"]
+)
 
 if uploaded_file is not None:
     try:
